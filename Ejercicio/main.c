@@ -11,6 +11,10 @@ int main()
     int numeroDos;
     int numeroTres;
 
+    int numeroMayor;
+    int numeroDelMedio;
+    int numeroMenor;
+
     printf("Este Programa Sacara el medio de tres numeros\n");
 
     printf("Ingrese El Primer numero: ");
@@ -20,7 +24,30 @@ int main()
     printf("Ingrese El Tercer numero: ");
     scanf("%d", &numeroTres);
 
-    printf("%d, %d, %d", numeroUno, numeroDos, numeroTres);
+    numeroMayor = numeroUno;
+    numeroMenor = numeroUno;
 
+    if(numeroMayor < numeroDos)
+    {
+        numeroMayor = numeroDos;
+    }
+    if(numeroMenor > numeroDos)
+    {
+        numeroMenor = numeroDos;
+    }
+
+
+    if(numeroMayor < numeroTres)
+    {
+        numeroMayor = numeroTres;
+    }
+    if(numeroMenor > numeroTres)
+    {
+        numeroMenor = numeroTres;
+    }
+
+
+    printf("%d, %d, %d\n", numeroUno, numeroDos, numeroTres);
+    printf("%d, %d", numeroMayor, numeroMenor);
     return 0;
 }
