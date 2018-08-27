@@ -46,8 +46,28 @@ int main()
         numeroMenor = numeroTres;
     }
 
+    if(numeroUno < numeroMayor && numeroUno > numeroMenor)
+    {
+        numeroDelMedio = numeroUno;
+    }
+    else if(numeroDos < numeroMayor && numeroDos > numeroMenor)
+    {
+        numeroDelMedio = numeroDos;
+    }
 
-    printf("%d, %d, %d\n", numeroUno, numeroDos, numeroTres);
-    printf("%d, %d", numeroMayor, numeroMenor);
+    else if(numeroTres < numeroMayor && numeroTres > numeroMenor)
+    {
+        numeroDelMedio = numeroTres;
+    }
+    else
+    {
+        printf("No existe el numero del medio\n");
+        return 0;
+    }
+
+    printf("El numero del medio es %d entre %d y %d", numeroDelMedio, numeroMayor, numeroMenor);
+
+    //printf("%d, %d, %d\n", numeroUno, numeroDos, numeroTres);
+    //printf("%d, %d", numeroMayor, numeroMenor);
     return 0;
 }
