@@ -11,6 +11,16 @@ int main()
     int numeroDos;
     int numeroTres;
 
-    printf("Hello world!\n");
+    printf("Este Programa Sacara el medio de tres numeros\n");
+
+    printf("Ingrese El Primer numero: ");
+    scanf("%d", &numeroUno);
+    printf("Ingrese El Segundo numero: ");
+    scanf("%d", &numeroDos);
+    printf("Ingrese El Tercer numero: ");
+    scanf("%d", &numeroTres);
+
+    printf("%d, %d, %d", numeroUno, numeroDos, numeroTres);
+
     return 0;
 }
